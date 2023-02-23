@@ -9,13 +9,6 @@ os.environ['TK_LIBRARY'] = r'C:\Users\matth\anaconda3\tcl\tk8.6'
 os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = r'C:\Users\matth\anaconda3\Library\plugins\platforms'
 os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = r'C:\Users\matth\anaconda3\Library\plugins'
 
-options = {
-    "build_exe": {
-        "copy_dependent_files": True,
-        "compressor": "upx"
-    }
-}
-
 # Set up the executables
 executables = [cx_Freeze.Executable("JN_OP_Tool.py")]
 
@@ -39,6 +32,8 @@ sys.path.append(r'C:\Users\matth\anaconda3\Library\plugins')
 # Run the build process
 cx_Freeze.setup(
     name = "JN_OP_Tool",
+    version = "0.2",
     options = {"build_exe": build_options},
-    executables = executables
+    executables = executables,
+    compress = True
 )
