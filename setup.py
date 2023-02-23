@@ -24,7 +24,8 @@ build_options = {
         r"C:\Users\matth\anaconda3\Library\bin\mkl_intel_thread.1.dll",
         r"C:\Users\matth\anaconda3\Library\bin\mkl_def.1.dll",
         r"C:\Users\matth\anaconda3\pkgs\mkl-2021.4.0-haa95532_640\Library\bin\mkl_sequential.1.dll"
-    ]
+    ],
+    "optimize": 2,
 }
 
 sys.path.append(r'C:\Users\matth\anaconda3\Library\plugins')
