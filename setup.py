@@ -14,7 +14,10 @@ executables = [cx_Freeze.Executable("OP_Tool.py")]
 
 # Set up the build options
 build_options = {
-    "packages": ["pandas", "matplotlib", "sys", "os", "tkinter", "openpyxl", "jdcal", "et_xmlfile", "PyQt5.QtCore", "PyQt5.QtGui", "PyQt5.QtWidgets", "PyQt5.QtSvg", "PyQt5.QtPrintSupport", "atexit"],
+    "packages": ["warnings", "pandas", "matplotlib", "sys", "os", "tkinter", 
+    "openpyxl", "jdcal", "et_xmlfile", "PyQt5.QtCore", "PyQt5.QtGui", "PyQt5.QtWidgets", 
+    "PyQt5.QtSvg", "PyQt5.QtPrintSupport", "atexit", "xlsxwriter", "glob"],
+
     "include_files": [
         "QUERY_FILE_GOES_HERE",
         r"C:\Users\matth\anaconda3\Library\plugins\platforms\qwindows.dll",
