@@ -219,10 +219,10 @@ plt.show()
 
 
 # 4. From admitted current term -> registered in after next term (Case: from summer -> spring)
+R4Search = int(NTerm_Search[0:6])
+NTerm_Admits = Query[Query['TermCodeAdmit'] == R4Search]
 if ANTerm_Search in enroll_status_cols:
     AN_EN_CTerm_Admits = CTerm_Admits[CTerm_Admits[ANTerm_Search].notnull()]
-    R4Search = int(NTerm_Search[0:6])
-    NTerm_Admits = Query[Query['TermCodeAdmit'] == R4Search]
     R4Ratio = len(AN_EN_CTerm_Admits) / len(CTerm_Admits)
 
     labels = ['Enrolled\n' + str(len(AN_EN_CTerm_Admits)) + ' Students',
@@ -343,8 +343,8 @@ print(Filtered_TCAList)
 
 
 with open("report.txt", "w") as file:
-    file.write("Osceola Prosper Report" + 
-               "\n ------------------------------------------")
+    file.write("Osceola Prosper Report: Reference Term " + str(Current_Term) + 
+               "\n------------------------------------------")
 # 1. Total registered in all available terms    
     file.write("\nTotal Prosper Students: " + str(TPS) + 
                "\n\nENROLLMENT BY TERM\n- - -\n" + str(Current_Term) + " Enrolled Students: " + str(CTerm) + 
