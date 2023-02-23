@@ -10,7 +10,7 @@ os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = r'C:\Users\matth\anaconda3\Library\p
 os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = r'C:\Users\matth\anaconda3\Library\plugins'
 
 # Set up the executables
-executables = [cx_Freeze.Executable("OP_Tool.py")]
+executables = [cx_Freeze.Executable("JN_OP_Tool.py")]
 
 # Set up the build options
 build_options = {
@@ -31,7 +31,7 @@ sys.path.append(r'C:\Users\matth\anaconda3\Library\plugins')
 
 # Run the build process
 cx_Freeze.setup(
-    name = "OP_Tool",
+    name = "JN_OP_Tool",
     options = {"build_exe": build_options},
     executables = executables
 )
