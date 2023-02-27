@@ -5,10 +5,14 @@
 > Application Name: JN_OP_Tool.exe
 > Current Version: 0.2 Alpha
 
-Update Notes:
+### Update Notes:
+1. Select from any query file in folder.
+2. Loading percent while dependencies load. Ideal for seeing the exe load from off a usb.
+3. Added improved figures for visualizations.
+4. Added course loads figues to report.
+5. Exports excel file for withdrawls and non-enrollees.
 
-
-Summary of use:
+### Summary of use:
 - This app takes queries and outputs enrollment and admittance figures in the form of 3 items:
     - Visualizations - a number of pie charts can be saved. These charts check enrollment against enrollment of a prior semester or admission terms of a prior semester. All visualizations are made using Matplotlib.
     - Report - a txt file that shows numbers for enrollment for all terms available in the query, all admissions numbers for all terms in the query, answers to consistant specified questions regarding the query, and course load numbers for the selected term.
@@ -33,6 +37,8 @@ FERPA Compliance:
 
 Past Versions:
 0.1 Alpha
+Notes:
+1. Initial app
 
 - - -
 
