@@ -34,6 +34,7 @@
 
 FERPA Compliance:
 
+- Student records are processed directly on the local machine and nothing is stored by the application. By deleting the initial query and exported files, no data remains. Data records transfered from one system to another has nothing to do with OP_Tool and users/editors are fully responsibile for the data they hold stewardship over.
 
 Past Versions:
 0.1 Alpha
