@@ -1,5 +1,5 @@
-# Osceola_Prosper_Enrollment_Tool
-
+# Ellucian_Banner_Enrollment_Tool
+~~ Osceola_Prosper_Enrollment_Tool ~~
 - - -
 
 > Application Name: JN_OP_Tool.exe
@@ -11,6 +11,7 @@
 3. Added improved figures for visualizations.
 4. Added course loads figures to report.
 5. Exports excel file for withdrawals and non-enrollees.
+6. Rename to Banner Enrollment Tool due to curfuffle. See FERPA Compliance section.
 
 ### Summary of use:
 - This app takes queries and outputs enrollment and admittance figures in the form of 3 items:
@@ -34,7 +35,7 @@
 
 FERPA Compliance:
 
-- Student records are processed directly on the local machine and nothing is stored by the application. By deleting the initial query and exported files, no data remains. Data records transfered from one system to another has nothing to do with OP_Tool and users/editors are fully responsibile for the data they hold stewardship over.
+- Student records are processed directly on the local machine and nothing is stored by the application. By deleting the initial query and exported files, no data remains. Data records transfered from one system to another has nothing to do with OP_Tool and users/editors are fully responsibile for the data they hold stewardship over. This app does not store any data and is not even functional until compiled or ran in a Python environment with all necessary dependencies. 
 
 Past Versions:
 0.1 Alpha
